@@ -1,24 +1,18 @@
-# README
+# SQLドリル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SQLドリルのサンプルデータベースをRailsの規約に合わせてスキーマを作成し、シードでデータを作成できるようにしたものです。
 
-Things you may want to cover:
+## テーブル作成・データ作成
 
-* Ruby version
+```
+$ bin/rails db:create
+$ bin/rails db:migrate
+$ bin/rails db:seed_fu
+```
 
-* System dependencies
+## 使用方法
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ bin/rails c
+$ Employee.all.map(&:name)
+```
